@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy - PetComfort Hub</title>
+    <meta name="description" content="PetComfort Hub Cookie Policy - Learn how we use cookies and similar technologies on our website.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header id="header" class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="bg-blue-600 p-2 rounded-lg">
+                        <i data-lucide="paw-print" class="h-6 w-6 text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-xl text-gray-900">PetComfort Hub</h1>
+                        <p class="text-xs text-gray-600">Trusted Pet Care Services</p>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex items-center gap-6">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                    <button onclick="openContactPopup()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
+                        Book Pet Care
+                    </button>
+                </nav>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+
+            <nav id="mobile-menu" class="md:hidden pt-4 pb-2 flex-col gap-3 hidden">
+                <a href="index.html" class="py-2 text-gray-700 transition-colors block">Home</a>
+                <a href="about.html" class="py-2 text-gray-700 transition-colors block">About</a>
+                <a href="services.html" class="py-2 text-gray-700 transition-colors block">Services</a>
+                <a href="contact.html" class="py-2 text-gray-700 transition-colors block">Contact</a>
+                <button onclick="openContactPopup()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md w-full transition-colors">
+                    Book Pet Care
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-blue-50 to-green-50 py-16">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Cookie Policy</h1>
+                <p class="text-gray-700">Last Updated: March 12, 2026</p>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="py-12">
+            <div class="container mx-auto px-4 max-w-4xl legal-content">
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">1. What Are Cookies?</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Cookies are small text files that are placed on your computer or mobile device when you visit 
+                            a website. They are widely used to make websites work more efficiently and provide information 
+                            to website owners. Cookies help us understand how visitors use our website and enable us to 
+                            improve your browsing experience.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">2. How We Use Cookies</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            PetComfort Hub uses cookies to:
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>Remember your preferences and settings</li>
+                            <li>Understand how you use our website</li>
+                            <li>Improve our website's functionality and user experience</li>
+                            <li>Analyze website traffic and user behavior</li>
+                            <li>Provide personalized content and recommendations</li>
+                            <li>Remember your cookie consent preferences</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">3. Types of Cookies We Use</h2>
+                        
+                        <div class="space-y-6">
+                            <div class="bg-blue-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">3.1 Essential Cookies</h3>
+                                <p class="text-gray-700 leading-relaxed mb-3">
+                                    <strong>Purpose:</strong> These cookies are necessary for the website to function properly. 
+                                    They enable core functionality such as security, network management, and accessibility.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Duration:</strong> Session cookies (deleted when you close your browser) or up to 1 year
+                                </p>
+                                <p class="text-gray-700 leading-relaxed mt-2">
+                                    <strong>Can be disabled:</strong> No - These are essential for the website to work
+                                </p>
+                            </div>
+
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">3.2 Functional Cookies</h3>
+                                <p class="text-gray-700 leading-relaxed mb-3">
+                                    <strong>Purpose:</strong> These cookies enable enhanced functionality and personalization, 
+                                    such as remembering your preferences, language settings, and previous form inputs.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Duration:</strong> Up to 1 year
+                                </p>
+                                <p class="text-gray-700 leading-relaxed mt-2">
+                                    <strong>Can be disabled:</strong> Yes - But some features may not work properly
+                                </p>
+                            </div>
+
+                            <div class="bg-yellow-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">3.3 Analytics Cookies</h3>
+                                <p class="text-gray-700 leading-relaxed mb-3">
+                                    <strong>Purpose:</strong> These cookies help us understand how visitors interact with our 
+                                    website by collecting and reporting information anonymously. This helps us improve our 
+                                    website and services.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Duration:</strong> Up to 2 years
+                                </p>
+                                <p class="text-gray-700 leading-relaxed mt-2">
+                                    <strong>Can be disabled:</strong> Yes
+                                </p>
+                            </div>
+
+                            <div class="bg-purple-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">3.4 Marketing Cookies</h3>
+                                <p class="text-gray-700 leading-relaxed mb-3">
+                                    <strong>Purpose:</strong> These cookies track your online activity to help us deliver more 
+                                    relevant advertising or to limit how many times you see an advertisement.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Duration:</strong> Up to 2 years
+                                </p>
+                                <p class="text-gray-700 leading-relaxed mt-2">
+                                    <strong>Can be disabled:</strong> Yes
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">4. Third-Party Cookies</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            We may also use third-party cookies from trusted partners to help us:
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li><strong>Google Analytics:</strong> To analyze website traffic and user behavior</li>
+                            <li><strong>Social Media Platforms:</strong> To enable social media sharing and integration</li>
+                            <li><strong>Payment Processors:</strong> To process payments securely</li>
+                            <li><strong>CDN Providers:</strong> To deliver content quickly and reliably</li>
+                        </ul>
+                        <p class="text-gray-700 leading-relaxed mt-4">
+                            These third parties have their own privacy policies and cookie policies. We recommend reviewing 
+                            their policies to understand how they use cookies.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">5. Cookie Information Table</h2>
+                        <div class="overflow-x-auto">
+                            <table class="w-full border-collapse">
+                                <thead>
+                                    <tr class="bg-gray-100">
+                                        <th class="border border-gray-300 px-4 py-3 text-left">Cookie Name</th>
+                                        <th class="border border-gray-300 px-4 py-3 text-left">Type</th>
+                                        <th class="border border-gray-300 px-4 py-3 text-left">Purpose</th>
+                                        <th class="border border-gray-300 px-4 py-3 text-left">Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="border border-gray-300 px-4 py-3">cookieConsent</td>
+                                        <td class="border border-gray-300 px-4 py-3">Essential</td>
+                                        <td class="border border-gray-300 px-4 py-3">Stores your cookie consent preference</td>
+                                        <td class="border border-gray-300 px-4 py-3">1 year</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="border border-gray-300 px-4 py-3">sessionID</td>
+                                        <td class="border border-gray-300 px-4 py-3">Essential</td>
+                                        <td class="border border-gray-300 px-4 py-3">Maintains your session while browsing</td>
+                                        <td class="border border-gray-300 px-4 py-3">Session</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 px-4 py-3">_ga</td>
+                                        <td class="border border-gray-300 px-4 py-3">Analytics</td>
+                                        <td class="border border-gray-300 px-4 py-3">Google Analytics - distinguishes users</td>
+                                        <td class="border border-gray-300 px-4 py-3">2 years</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="border border-gray-300 px-4 py-3">_gid</td>
+                                        <td class="border border-gray-300 px-4 py-3">Analytics</td>
+                                        <td class="border border-gray-300 px-4 py-3">Google Analytics - distinguishes users</td>
+                                        <td class="border border-gray-300 px-4 py-3">24 hours</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Managing Your Cookie Preferences</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            You have the right to decide whether to accept or reject cookies. You can manage your cookie 
+                            preferences in several ways:
+                        </p>
+                        
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">6.1 Cookie Banner</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            When you first visit our website, you'll see a cookie banner where you can accept or reject 
+                            non-essential cookies.
+                        </p>
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">6.2 Browser Settings</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Most web browsers allow you to control cookies through their settings. Here's how to manage 
+                            cookies in popular browsers:
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li><strong>Google Chrome:</strong> Settings > Privacy and security > Cookies and other site data</li>
+                            <li><strong>Mozilla Firefox:</strong> Options > Privacy & Security > Cookies and Site Data</li>
+                            <li><strong>Safari:</strong> Preferences > Privacy > Cookies and website data</li>
+                            <li><strong>Microsoft Edge:</strong> Settings > Privacy, search, and services > Cookies and site permissions</li>
+                        </ul>
+
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">6.3 Opt-Out Links</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            For third-party cookies, you can opt out directly:
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>Google Analytics: <a href="https://tools.google.com/dlpage/gaoptout" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a></li>
+                            <li>Network Advertising Initiative: <a href="http://optout.networkadvertising.org/" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">NAI Opt-out</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Impact of Disabling Cookies</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            If you choose to disable cookies, some features of our website may not function properly:
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                            <li>You may need to manually enter information each time you visit</li>
+                            <li>Some personalized features may not be available</li>
+                            <li>You may see less relevant content and advertisements</li>
+                            <li>Certain interactive features may not work correctly</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">8. Do Not Track Signals</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Some browsers include a "Do Not Track" (DNT) feature that signals to websites that you do not 
+                            want to have your online activity tracked. Currently, there is no industry standard for 
+                            responding to DNT signals. At this time, our website does not respond to DNT signals.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Updates to This Cookie Policy</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            We may update this Cookie Policy from time to time to reflect changes in technology, legislation, 
+                            or our business practices. We will notify you of any significant changes by posting a notice on 
+                            our website or updating the "Last Updated" date at the top of this policy.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">10. More Information</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            For more information about how we handle your personal data, please see our 
+                            <a href="privacy-policy.html" class="text-blue-600 hover:underline">Privacy Policy</a>.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            To learn more about cookies in general, visit 
+                            <a href="https://www.allaboutcookies.org" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">www.allaboutcookies.org</a>.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">11. Contact Us</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            If you have any questions about our use of cookies, please contact us:
+                        </p>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <p class="text-gray-700 mb-2"><strong>PetComfort Hub</strong></p>
+                            <p class="text-gray-700 mb-2">10222 Desert Sands St Ste 204</p>
+                            <p class="text-gray-700 mb-2">San Antonio, TX 78116</p>
+                            <p class="text-gray-700 mb-2">United States</p>
+                            <p class="text-gray-700 mb-2">
+                                <strong>Phone:</strong> <a href="tel:+19253069647" class="text-blue-600 hover:underline">+1-925-306-9647</a>
+                            </p>
+                            <p class="text-gray-700">
+                                <strong>Email:</strong> <a href="mailto:help@petcomforthub.site" class="text-blue-600 hover:underline">help@petcomforthub.site</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-t pt-6">
+                        <p class="text-sm text-gray-600 italic">
+                            By continuing to use our website, you consent to our use of cookies in accordance with this 
+                            Cookie Policy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="bg-blue-600 p-2 rounded-lg">
+                            <i data-lucide="paw-print" class="h-5 w-5 text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">PetComfort Hub</h3>
+                    </div>
+                    <p class="text-sm mb-4">
+                        Professional pet care services for your beloved companions across the United States.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-blue-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-400 transition-colors">About</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" class="hover:text-blue-400 transition-colors">Terms and Conditions</a></li>
+                        <li><a href="disclaimer.html" class="hover:text-blue-400 transition-colors">Disclaimer</a></li>
+                        <li><a href="cookie-policy.html" class="hover:text-blue-400 transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex gap-2">
+                            <i data-lucide="map-pin" class="h-5 w-5 flex-shrink-0 text-blue-400"></i>
+                            <span>
+                                10222 Desert Sands St Ste 204<br>
+                                San Antonio, TX 78116<br>
+                                United States
+                            </span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <i data-lucide="phone" class="h-5 w-5 flex-shrink-0 text-blue-400"></i>
+                            <a href="tel:+19253069647" class="hover:text-blue-400 transition-colors">+1-925-306-9647</a>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <i data-lucide="mail" class="h-5 w-5 flex-shrink-0 text-blue-400"></i>
+                            <a href="mailto:help@petcomforthub.site" class="hover:text-blue-400 transition-colors">help@petcomforthub.site</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; <span id="current-year"></span> PetComfort Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 shadow-lg z-50 hidden">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <p class="text-sm">
+                        We use cookies to improve your browsing experience and analyze website traffic. 
+                        By clicking 'Accept', you consent to our cookie policy. 
+                        <a href="cookie-policy.html" class="underline hover:text-blue-400 transition-colors">Learn More</a>
+                    </p>
+                </div>
+                <div class="flex gap-2 flex-shrink-0">
+                    <button onclick="rejectCookies()" class="border border-white text-white hover:bg-white hover:text-gray-900 px-4 py-2 rounded-md text-sm transition-colors">
+                        Reject
+                    </button>
+                    <button onclick="acceptCookies()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors">
+                        Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Popup -->
+    <div id="contact-popup" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4" style="display: none;">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-2xl font-bold">Book Pet Care Service</h2>
+                    <button onclick="closeContactPopup()" class="text-gray-500 hover:text-gray-700">
+                        <i data-lucide="x" class="h-6 w-6"></i>
+                    </button>
+                </div>
+                
+                <form id="popup-contact-form" class="space-y-4">
+                    <div>
+                        <label for="popup-name" class="block text-sm font-medium mb-1">Name *</label>
+                        <input type="text" id="popup-name" required placeholder="Your full name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="popup-email" class="block text-sm font-medium mb-1">Email *</label>
+                        <input type="email" id="popup-email" required placeholder="your.email@example.com" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="popup-phone" class="block text-sm font-medium mb-1">Phone *</label>
+                        <input type="tel" id="popup-phone" required placeholder="+1-XXX-XXX-XXXX" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="popup-service" class="block text-sm font-medium mb-1">Service Required *</label>
+                        <select id="popup-service" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Select a service</option>
+                            <option value="dog-walking">Dog Walking</option>
+                            <option value="pet-sitting">Pet Sitting</option>
+                            <option value="grooming">Pet Grooming</option>
+                            <option value="boarding">Pet Boarding</option>
+                            <option value="wellness">Pet Wellness Check</option>
+                            <option value="puppy-kitten">Puppy & Kitten Care</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="popup-message" class="block text-sm font-medium mb-1">Message</label>
+                        <textarea id="popup-message" rows="4" placeholder="Tell us about your pet care needs..." class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <input type="checkbox" id="popup-policy" required class="mt-1">
+                        <label for="popup-policy" class="text-sm">
+                            I agree to the 
+                            <a href="privacy-policy.html" class="text-blue-600 hover:underline">Privacy Policy</a> 
+                            and 
+                            <a href="terms-conditions.html" class="text-blue-600 hover:underline">Terms & Conditions</a>.
+                        </label>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
+                        Submit Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed top-4 right-4 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hidden z-50">
+        <p id="toast-message"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

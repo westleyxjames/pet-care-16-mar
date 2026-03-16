@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PetComfort Hub</title>
+    <meta name="description" content="Learn about PetComfort Hub's mission, values, and dedicated team of pet care professionals.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header id="header" class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="bg-blue-600 p-2 rounded-lg">
+                        <i data-lucide="paw-print" class="h-6 w-6 text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-xl text-gray-900">PetComfort Hub</h1>
+                        <p class="text-xs text-gray-600">Trusted Pet Care Services</p>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex items-center gap-6">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-blue-600 font-semibold transition-colors">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                    <button onclick="openContactPopup()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
+                        Book Pet Care
+                    </button>
+                </nav>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+
+            <nav id="mobile-menu" class="md:hidden pt-4 pb-2 flex-col gap-3 hidden">
+                <a href="index.html" class="py-2 text-gray-700 transition-colors block">Home</a>
+                <a href="about.html" class="py-2 text-blue-600 font-semibold transition-colors block">About</a>
+                <a href="services.html" class="py-2 text-gray-700 transition-colors block">Services</a>
+                <a href="contact.html" class="py-2 text-gray-700 transition-colors block">Contact</a>
+                <button onclick="openContactPopup()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md w-full transition-colors">
+                    Book Pet Care
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-blue-50 to-green-50 py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    About PetComfort Hub
+                </h1>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    Founded with passion for animal care and dedication to pet wellness
+                </p>
+            </div>
+        </section>
+
+        <!-- Company Story -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                            Our Story
+                        </h2>
+                        <div class="space-y-4 text-gray-700 text-lg leading-relaxed">
+                            <p>
+                                PetComfort Hub was founded in 2015 by a group of passionate animal lovers 
+                                who recognized the need for reliable, professional pet care services in 
+                                their community. What started as a small dog walking service has grown 
+                                into a comprehensive pet care company serving thousands of families across 
+                                the United States.
+                            </p>
+                            <p>
+                                Our founders, lifelong pet owners themselves, understood the anxiety pet 
+                                parents feel when leaving their beloved companions in someone else's care. 
+                                They set out to create a service that would provide peace of mind through 
+                                transparent communication, certified professionals, and a genuine love for 
+                                animals.
+                            </p>
+                            <p>
+                                Today, PetComfort Hub is proud to be a trusted name in pet care, employing 
+                                a team of certified pet care specialists who share our commitment to 
+                                excellence and compassion. Every member of our team undergoes rigorous 
+                                training and background checks to ensure your pet receives the best care 
+                                possible.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1733783489145-f3d3ee7a9ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwZXQlMjBjYXJlJTIwc2VydmljZXxlbnwxfHx8fDE3NzMzMDQ0OTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Professional pet care team"
+                            class="rounded-2xl shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission -->
+        <section class="py-16 bg-blue-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                        Our Mission
+                    </h2>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        To provide safe, reliable, and compassionate pet care services that enhance 
+                        the quality of life for pets and their owners. We strive to be the most 
+                        trusted pet care partner by delivering exceptional service, fostering lasting 
+                        relationships, and treating every pet with the love and respect they deserve.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        Our Core Values
+                    </h2>
+                    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                        These principles guide everything we do at PetComfort Hub
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="heart" class="h-10 w-10 text-blue-600"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-gray-900 mb-3">
+                            Compassion
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            We treat every pet with love and kindness as if they were our own
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="shield" class="h-10 w-10 text-blue-600"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-gray-900 mb-3">
+                            Trust
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Building lasting relationships through reliability and transparency
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="award" class="h-10 w-10 text-blue-600"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-gray-900 mb-3">
+                            Professional Care
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Certified experts committed to the highest standards of pet care
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="users" class="h-10 w-10 text-blue-600"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-gray-900 mb-3">
+                            Pet Happiness
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Ensuring every pet receives personalized attention and care
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Image Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+                        Meet Our Caring Team
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <img src="https://images.unsplash.com/photo-1668522907255-62950845ff46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXQlMjBzaXR0ZXIlMjBjYXJpbmclMjBkb2d8ZW58MXx8fHwxNzczMzMwMDUyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Pet caregiver with dog"
+                            class="rounded-xl shadow-md w-full h-80 object-cover">
+                        <img src="https://images.unsplash.com/photo-1725419876939-f8f9987cf0d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXQlMjBiZWluZyUyMGdyb29tZWQlMjBwcm9mZXNzaW9uYWxseXxlbnwxfHx8fDE3NzMzMzAwNTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Pet grooming professional"
+                            class="rounded-xl shadow-md w-full h-80 object-cover">
+                    </div>
+                    <p class="text-center text-gray-700 mt-8 text-lg">
+                        Our certified pet care professionals are passionate animal lovers with extensive 
+                        training in pet behavior, safety, and wellness. Each team member is carefully 
+                        selected and background-checked to ensure your pet receives the highest quality care.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-16 bg-gradient-to-r from-blue-600 to-green-600 text-white">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
+                    <div>
+                        <div class="text-4xl font-bold mb-2">10,000+</div>
+                        <div class="text-lg opacity-90">Happy Pets</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">5,000+</div>
+                        <div class="text-lg opacity-90">Satisfied Clients</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">50+</div>
+                        <div class="text-lg opacity-90">Certified Caregivers</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">8+</div>
+                        <div class="text-lg opacity-90">Years of Service</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="bg-blue-600 p-2 rounded-lg">
+                            <i data-lucide="paw-print" class="h-5 w-5 text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">PetComfort Hub</h3>
+                    </div>
+                    <p class="text-sm mb-4">
+                        Professional pet care services for your beloved companions across the United States.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-blue-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-400 transition-colors">About</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" class="hover:text-blue-400 transition-colors">Terms and Conditions</a></li>
+                        <li><a href="disclaimer.html" class="hover:text-blue-400 transition-colors">Disclaimer</a></li>
+                        <li><a href="cookie-policy.html" class="hover:text-blue-400 transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex gap-2">
+                            <i data-lucide="map-pin" class="h-5 w-5 flex-shrink-0 text-blue-400"></i>
+                            <span>
+                                10222 Desert Sands St Ste 204<br>
+                                San Antonio, TX 78116<br>
+                                United States
+                            </span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <i data-lucide="phone" class="h-5 w-5 flex-shrink-0 text-blue-400"></i>
+                            <a href="tel:+19253069647" class="hover:text-blue-400 transition-colors">+1-925-306-9647</a>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <i data-lucide="mail" class="h-5 w-5 flex-shrink-0 text-blue-400"></i>
+                            <a href="mailto:help@petcomforthub.site" class="hover:text-blue-400 transition-colors">help@petcomforthub.site</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; <span id="current-year"></span> PetComfort Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 shadow-lg z-50 hidden">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <p class="text-sm">
+                        We use cookies to improve your browsing experience and analyze website traffic. 
+                        By clicking 'Accept', you consent to our cookie policy. 
+                        <a href="cookie-policy.html" class="underline hover:text-blue-400 transition-colors">Learn More</a>
+                    </p>
+                </div>
+                <div class="flex gap-2 flex-shrink-0">
+                    <button onclick="rejectCookies()" class="border border-white text-white hover:bg-white hover:text-gray-900 px-4 py-2 rounded-md text-sm transition-colors">
+                        Reject
+                    </button>
+                    <button onclick="acceptCookies()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm transition-colors">
+                        Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Popup -->
+    <div id="contact-popup" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4" style="display: none;">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-2xl font-bold">Book Pet Care Service</h2>
+                    <button onclick="closeContactPopup()" class="text-gray-500 hover:text-gray-700">
+                        <i data-lucide="x" class="h-6 w-6"></i>
+                    </button>
+                </div>
+                
+                <form id="popup-contact-form" class="space-y-4">
+                    <div>
+                        <label for="popup-name" class="block text-sm font-medium mb-1">Name *</label>
+                        <input type="text" id="popup-name" required placeholder="Your full name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="popup-email" class="block text-sm font-medium mb-1">Email *</label>
+                        <input type="email" id="popup-email" required placeholder="your.email@example.com" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="popup-phone" class="block text-sm font-medium mb-1">Phone *</label>
+                        <input type="tel" id="popup-phone" required placeholder="+1-XXX-XXX-XXXX" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="popup-service" class="block text-sm font-medium mb-1">Service Required *</label>
+                        <select id="popup-service" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Select a service</option>
+                            <option value="dog-walking">Dog Walking</option>
+                            <option value="pet-sitting">Pet Sitting</option>
+                            <option value="grooming">Pet Grooming</option>
+                            <option value="boarding">Pet Boarding</option>
+                            <option value="wellness">Pet Wellness Check</option>
+                            <option value="puppy-kitten">Puppy & Kitten Care</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="popup-message" class="block text-sm font-medium mb-1">Message</label>
+                        <textarea id="popup-message" rows="4" placeholder="Tell us about your pet care needs..." class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <input type="checkbox" id="popup-policy" required class="mt-1">
+                        <label for="popup-policy" class="text-sm">
+                            I agree to the 
+                            <a href="privacy-policy.html" class="text-blue-600 hover:underline">Privacy Policy</a> 
+                            and 
+                            <a href="terms-conditions.html" class="text-blue-600 hover:underline">Terms & Conditions</a>.
+                        </label>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
+                        Submit Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed top-4 right-4 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hidden z-50">
+        <p id="toast-message"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
